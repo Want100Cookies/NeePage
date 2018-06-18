@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Translate text="Nee" lang="en"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Translate from './components/Translate.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    Translate,
+  },
+  mounted() {
+    console.log(Translate.langs);
   },
 };
 </script>
